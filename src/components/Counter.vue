@@ -1,7 +1,10 @@
 <template>
-    <div class="box">
+    <div>
+        <div class="box">
+            <h2>THe count is: {{ count }}</h2>
+        </div>
         <p>
-            {{ msg }}
+            <button @click="count += 1">Increment</button>
         </p>
     </div>
 </template>
@@ -9,10 +12,15 @@
 <script>
 
 export default {
-  name: 'Message',
+  name: 'Counter',
   props: {
     msg: String
-  }
+  },
+    data() {
+        return {
+            count: 0
+        }
+    },
 }
 </script>
 
