@@ -1,21 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Message msg="Welcome to Your Vue.js App"/>
-    <Message msg="Welcome asdsade.js App"/>
-    <Message msg="WeApp"/>
+    <Counter></Counter>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Message from './components/Message'
+import Counter from './components/Counter'
 
 export default {
     name: 'app',
     components: {
         // HelloWorld,
-        Message
+        Counter
     },
 
     data() {
